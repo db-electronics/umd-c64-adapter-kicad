@@ -1,0 +1,99 @@
+EESchema Schematic File Version 2
+LIBS:db-connectors
+LIBS:db-diodes
+LIBS:db-mcu
+LIBS:db-memory
+LIBS:db-passives
+LIBS:db-sem
+LIBS:db-transistors
+LIBS:db-vgparts
+LIBS:c64-umd-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "Commodore 64 UMD Adapter"
+Date "2018-03-28"
+Rev "0.1"
+Comp "db Electronics"
+Comment1 "Licensed under the CERN OHL v.1.2"
+Comment2 "https://github.com/db-electronics/umd-c64-adapter-kicad"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C64-CONN CON?
+U 1 1 5ABBD603
+P 3800 2525
+F 0 "CON?" H 3925 2675 60  0000 C CNN
+F 1 "C64-CONN" H 4050 2575 60  0000 C CNN
+F 2 "db-thparts:C64-CONN" H 4325 3250 60  0001 C CNN
+F 3 "" H 4025 2950 60  0001 C CNN
+F 4 "#ND" H 4000 3050 60  0001 C CNN "Digikey"
+F 5 "C64 44 Pos Edge Connector" H 4500 3150 60  0001 C CNN "Description"
+	1    3800 2525
+	1    0    0    -1  
+$EndComp
+$Comp
+L UMD-CONN CON?
+U 1 1 5ABBD6A6
+P 6850 5825
+F 0 "CON?" H 7000 9275 60  0000 C CNN
+F 1 "UMD-CONN" H 7100 9175 60  0000 C CNN
+F 2 "db-thparts:UMD-CONN-DIP64" H 7575 9475 60  0001 C CNN
+F 3 "" H 7200 6375 60  0001 C CNN
+	1    6850 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L UMD-CONN CON?
+U 2 1 5ABBD74F
+P 8100 5825
+F 0 "CON?" H 8250 9275 60  0000 C CNN
+F 1 "UMD-CONN" H 8350 9175 60  0000 C CNN
+F 2 "db-thparts:UMD-CONN-DIP64" H 8825 9475 60  0001 C CNN
+F 3 "" H 8450 6375 60  0001 C CNN
+	2    8100 5825
+	1    0    0    -1  
+$EndComp
+$Comp
+L MC74HC589ADTR2G U?
+U 1 1 5ABBD7AE
+P 3150 5725
+F 0 "U?" H 3025 5800 50  0000 C CNN
+F 1 "MC74HC589ADTR2G" H 4150 5000 50  0000 C CNN
+F 2 "db-smt:TSSOP-16" H 3625 6425 60  0001 C CNN
+F 3 "http://www.onsemi.com/pub/Collateral/MC74HC589A-D.PDF" H 4600 6325 60  0001 C CNN
+F 4 "MC74HC589ADTR2GOSCT-ND" H 3850 6225 60  0001 C CNN "Digikey"
+F 5 "IC SHIFT REGISTER 8BIT 16-TSSOP" H 4000 6125 60  0001 C CNN "Description"
+	1    3150 5725
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_0603 C?
+U 1 1 5ABBD8D0
+P 5075 5800
+F 0 "C?" H 5100 5900 50  0000 L CNN
+F 1 "0.1uF/50V" H 5100 5700 50  0000 L CNN
+F 2 "db-smt:0603" H 5575 5700 30  0001 C CNN
+F 3 "" H 5100 5900 60  0001 C CNN
+F 4 "445-5666-1-ND" H 5500 5775 60  0001 C CNN "Digikey"
+F 5 "CAP CER 0.1UF 50V X7R 0603" H 5500 5875 60  0001 C CNN "Description"
+	1    5075 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_0805 C?
+U 1 1 5ABBD929
+P 5600 5825
+F 0 "C?" H 5625 5925 50  0000 L CNN
+F 1 "10uF/10V" H 5625 5725 50  0000 L CNN
+F 2 "db-smt:0805" H 5638 5675 30  0001 C CNN
+F 3 "" H 5625 5925 60  0000 C CNN
+F 4 "490-10517-1-ND" H 5725 6025 60  0001 C CNN "Digikey"
+F 5 "CAP CER 10UF 10V X7R 0805" H 5725 6125 60  0001 C CNN "Description"
+	1    5600 5825
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
