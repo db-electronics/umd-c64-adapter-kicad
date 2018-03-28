@@ -1,4 +1,4 @@
-update=Wed 28 Mar 2018 10:32:07 AM EDT
+update=Wed 28 Mar 2018 11:42:39 AM EDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -35,5 +37,4 @@ LibName5=/home/rene/Git/KiCad/kicadlib/db-passives
 LibName6=/home/rene/Git/KiCad/kicadlib/db-sem
 LibName7=/home/rene/Git/KiCad/kicadlib/db-transistors
 LibName8=/home/rene/Git/KiCad/kicadlib/db-vgparts
-[general]
-version=1
+LibName9=power
