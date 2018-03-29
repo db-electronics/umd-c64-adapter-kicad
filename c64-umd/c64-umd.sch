@@ -303,8 +303,6 @@ Wire Wire Line
 	7950 5000 8000 5000
 Wire Wire Line
 	7950 1900 7950 5100
-Wire Wire Line
-	8000 2800 7950 2800
 Connection ~ 7950 5000
 Wire Wire Line
 	8000 2900 7600 2900
@@ -524,7 +522,7 @@ Wire Wire Line
 	6400 1900 6400 5100
 Wire Wire Line
 	6450 2200 6050 2200
-Text Label 6050 2200 0    60   ~ 0
+Text Label 6050 2500 0    60   ~ 0
 ~ROMH
 Wire Wire Line
 	4500 2950 4100 2950
@@ -536,7 +534,7 @@ Text Label 4200 3050 0    60   ~ 0
 ~IO2
 Wire Wire Line
 	8000 2200 7600 2200
-Text Label 7600 2200 0    60   ~ 0
+Text Label 7600 2300 0    60   ~ 0
 ~IO2
 Wire Wire Line
 	4500 3550 4100 3550
@@ -556,11 +554,11 @@ Text Label 4200 3150 0    60   ~ 0
 ~EXROM
 Wire Wire Line
 	6450 2400 6050 2400
-Text Label 6050 2400 0    60   ~ 0
+Text Label 6050 2300 0    60   ~ 0
 ~GAME
 Wire Wire Line
 	6450 2300 6050 2300
-Text Label 6050 2300 0    60   ~ 0
+Text Label 6050 2200 0    60   ~ 0
 ~EXROM
 Wire Wire Line
 	3000 3750 2600 3750
@@ -576,7 +574,7 @@ Text Label 4200 3350 0    60   ~ 0
 ~IO1
 Wire Wire Line
 	6450 2600 6050 2600
-Text Label 6050 2600 0    60   ~ 0
+Text Label 7600 2200 0    60   ~ 0
 ~ROML
 Wire Wire Line
 	6450 2700 6050 2700
@@ -588,11 +586,11 @@ Text Label 1600 3875 0    60   ~ 0
 ~CE
 Wire Wire Line
 	6450 2500 6050 2500
-Text Label 6050 2500 0    60   ~ 0
+Text Label 6050 2600 0    60   ~ 0
 ~IO1
 Wire Wire Line
 	8000 2300 7600 2300
-Text Label 7600 2300 0    60   ~ 0
+Text Label 6050 2400 0    60   ~ 0
 Phi2
 Wire Wire Line
 	1950 3875 1600 3875
@@ -652,13 +650,7 @@ $EndComp
 Wire Wire Line
 	6450 2000 5900 2000
 Wire Wire Line
-	5900 1850 5900 2800
-Wire Wire Line
-	5900 2800 6450 2800
-Connection ~ 5900 2000
-Wire Wire Line
 	8000 1900 7950 1900
-Connection ~ 7950 2800
 Wire Wire Line
 	6450 1900 6400 1900
 Connection ~ 6400 5000
@@ -1219,10 +1211,10 @@ F 5 "TRANS NPN 40V 0.2A SOT23" H 3100 6500 60  0001 C CNN "Description"
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR?
+L +5V #PWR011
 U 1 1 5ABC5209
 P 5900 4850
-F 0 "#PWR?" H 5900 4700 50  0001 C CNN
+F 0 "#PWR011" H 5900 4700 50  0001 C CNN
 F 1 "+5V" H 5900 4990 50  0000 C CNN
 F 2 "" H 5900 4850 50  0001 C CNN
 F 3 "" H 5900 4850 50  0001 C CNN
@@ -1234,10 +1226,10 @@ Wire Wire Line
 Wire Wire Line
 	5900 4900 6450 4900
 $Comp
-L +5V #PWR?
+L +5V #PWR012
 U 1 1 5ABC53B2
 P 7450 4850
-F 0 "#PWR?" H 7450 4700 50  0001 C CNN
+F 0 "#PWR012" H 7450 4700 50  0001 C CNN
 F 1 "+5V" H 7450 4990 50  0000 C CNN
 F 2 "" H 7450 4850 50  0001 C CNN
 F 3 "" H 7450 4850 50  0001 C CNN
@@ -1248,4 +1240,6 @@ Wire Wire Line
 	7450 4850 7450 4900
 Wire Wire Line
 	7450 4900 8000 4900
+Wire Wire Line
+	5900 2000 5900 1850
 $EndSCHEMATC
