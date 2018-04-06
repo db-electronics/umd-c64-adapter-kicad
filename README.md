@@ -13,3 +13,8 @@ conditions
 
 # C64 UMD Adapter
 This KiCad project contains the Commodore 64 cartridge adapter for the [Universal Mega Dumper](https://github.com/db-electronics/Universal-Mega-Dumper).
+
+## ID
+* 0x02
+
+Each UMD adapter contains a serial shift register with an 8bit ID.
